@@ -24,10 +24,10 @@ const ServiceCard = ({ index, title, icon }) => (
         <img
           src={icon}
           alt='web-development'
-          className='w-16 h-16 object-contain'
+          className='w-30 h-30 object-contain mb-4'
         />
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        <h3 className='text-white text-[16px] font-bold text-center'>
           {title}
         </h3>
       </div>
@@ -39,17 +39,28 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>About Us</p>
-        <h2 className={styles.sectionHeadText}>Members</h2>
+        {/* Change the color of "Our Mission" to green */}
+        <h2 className={`${styles.sectionHeadText} text-green-800`}>
+          Our Mission
+        </h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-bold text-primary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-bold text-black text-[17px] max-w-3xl leading-[30px]'
       >
-        We will meet every ... and learn Unity tools alongside C#.
-        GameJams will be locally held within the club then we will transfer to
-        competing online.
+        RELASTIC is an online platform for students to learn and engage in the use of sustainable resources around campus. We aim to motivate students to be mindful of the environment in a fast paced environment where replacing is more convenient than reusing.
+      </motion.p>
+
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className='mt-4 text-bold text-black text-[17px] max-w-3xl leading-[30px]'
+      >
+        Through RELASTIC, we aim for:
+        <ul className="list-disc pl-6 mt-2">
+          <li>Structured reduction in usage of plastic products</li>
+          <li>Promote Eco-friendly products and incentivize Eco-friendly behavior</li>
+        </ul>
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

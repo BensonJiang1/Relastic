@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { menu, close, jumbo} from "../assets";
+import { menu, close, logo} from "../assets";
 
 
 const Navbar = () => {
@@ -31,7 +31,7 @@ const Navbar = () => {
       className={`${
         styles.paddingX
       } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-sky-200 " : "bg-transparent"
+        scrolled ? "bg-orange-100" : "bg-transparent"
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -43,23 +43,24 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={jumbo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='cursor-pointer flex text-2xl font-bold bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 text-transparent bg-clip-text '>
-            JumboJam &nbsp;
+          {/* src = jumbo changes the logo*/}
+          <img src={logo} alt='logo' className='w-12 h-12 object-contain' />
+          <p className='cursor-pointer flex text-2xl font-bold bg-gradient-to-r from-green-700 via-gray-500 to-green-700 text-transparent bg-clip-text'>
+            Relastic &nbsp;
             
           </p>
-        </Link>
+    </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"
+                active === nav.title ? "text-white" : "text-black"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a href={`/${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>
@@ -89,7 +90,7 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a href={`/${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
             </ul>

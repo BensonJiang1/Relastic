@@ -1,14 +1,14 @@
 import {
-  mobile,
-  backend,
-  web,
+  Benson,
+  Radhika,
+  Tasnim,
+  Yuying,
+  Trees1,
+  Trees2,
+  pr,c
 } from "../assets";
 
 export const navLinks = [
-  {
-    id: "about",
-    title: "About",
-  },
   {
     id: "signUp",
     title: "Sign Up",
@@ -22,22 +22,38 @@ export const navLinks = [
 const services = [
   {
     title: "Benson Jiang",
-    icon: web,
+    icon: Benson,
   },
   {
-    title: "Yuying",
-    icon: mobile,
+    title: "Yuying Wang",
+    icon: Yuying,
   },
   {
-    title: "Tasnim",
-    icon: backend,
+    title: "Tasnim Hossain",
+    icon: Tasnim,
   },
   {
-    title: "Radhika",
-    icon: backend,
+    title: "Radhika Agrawal",
+    icon: Radhika,
   },
+];
+
+const tasks = [
+  {
+    title: "Clean Up",
+    icon: c,
+  },
+  {
+    title: "Recycle",
+    icon: Trees1,
+  },
+  {
+    title: "Park Restoration",
+    icon: pr,
+  },
+  
 ];
 
 
 
-export { services };
+export { services, tasks };

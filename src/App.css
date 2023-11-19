@@ -1,0 +1,33 @@
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-image: url('/src/assets/p.jpg');
+    
+}
+
+.signup-form, .login-form{
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+.signup-button,
+.login-button {
+    margin: 10px 0px;
+}
+
+.signup-button,
+.login-button {
+    cursor: pointer;
+}

@@ -1,5 +1,4 @@
 {
-  "homepage" : "https://BensonJiang1.github.io",
   "name": "3dfolio",
   "private": false,
   "version": "0.0.0",
@@ -15,11 +14,12 @@
     "@emailjs/browser": "^3.10.0",
     "@react-three/drei": "^9.56.24",
     "@react-three/fiber": "^8.11.1",
+    "firebase": "^10.6.0",
     "framer-motion": "^9.0.7",
     "maath": "^0.5.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.1",
+    "react-router-dom": "^6.19.0",
     "react-tilt": "^0.1.4",
     "react-vertical-timeline-component": "^3.6.0",
     "three": "^0.149.0"

@@ -2,23 +2,18 @@ import { styles } from "../styles";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
-      <div
-        className={`absolute inset-0 top-[120px] justify-center max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
-      >
-        <div >
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            WELCOME TO <br /><span >
-              <p className="font-bold bg-gradient-to-r from-red-400 via-gray-300 to-blue-500 text-transparent bg-clip-text ">JUMBOJAM</p>
-              </span> 
+    <section className={`relative w-full h-screen flex items-center justify-center`}>
+      <div className={`max-w-7xl ${styles.paddingX}`}>
+        <div>
+          <h1 className={`${styles.heroHeadText} text-white text-center`}>
+            <span className="font-bold bg-gradient-to-r from-green-800 via-gray-400 to-green-800 text-transparent bg-clip-text">WELCOME</span>
+            <span className="block">TO</span>
+            <span className="block">
+              <p className="font-bold bg-gradient-to-r from-green-800 via-gray-400 to-green-800 text-transparent bg-clip-text">RELASTIC</p>
+            </span>
           </h1>
-
-          
-          
         </div>
       </div>
-
-      
     </section>
   );
 };
